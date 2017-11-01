@@ -32,7 +32,7 @@ exports.updateTask = function (req, res) {
     Task.findOneAndUpdate({_id: req.params.id}, req.body, {new: true}, function(err) {
         if (err)
             res.send(err);
-        res.json({message: 'Task succesfully updated'});
+        res.json({message: 'Task successfully updated'});
     })
 };
 
@@ -40,6 +40,6 @@ exports.deleteTask = function (req, res) {
     Task.remove({_id: req.params.id}, function (err, task) {
         if (err)
             res.send(err);
-        res.json({message: 'Task succesfully deleted'});
+        res.json({message: 'Task successfully deleted'});
     })
 };
