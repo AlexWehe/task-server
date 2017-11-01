@@ -1,0 +1,35 @@
+{
+  "name": "task-server",
+  "version": "1.0.0",
+  "description": "Node server to handle tasks",
+  "engines": {
+    "node": "6.11.1"
+  },
+  "main": "server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexWehe/task-server.git"
+  },
+  "keywords": [
+    "example",
+  ],
+  "author": "Alejandro Lopez Redondo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexWehe/task-serve/issues"
+  },
+  "homepage": "https://github.com/AlexWehe/task-serve#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.2",
+    "mongoose": "^4.12.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
