@@ -1,0 +1,12 @@
+[
+  {
+    "name": "First task",
+    "description": "First task description",
+    "status": "todo"
+  },
+  {
+    "name": "Second task",
+    "description": "Second task description",
+    "status": "todo"
+  }
+]

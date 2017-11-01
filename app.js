@@ -7,7 +7,14 @@ let mongoose  = require('mongoose');
 let bodyParser = require('body-parser');
 let Task = require('./api/models/taskModel');
 
-mongoose.connect('mongodb://localhost/taskDev', { useMongoClient: true });
+mongoose.connect('mongodb://localhost/taskDev', { useMongoClient: true }, function (error) {
+   if(error) {
+       console.log("Error connecting to Mongo");
+       process.exit(1);
+   } else {
+       console.log("Connected to Mongo");
+   }
+});
 mongoose.Promise = global.Promise;
 
 app.use(bodyParser.urlencoded({extended: true}));
