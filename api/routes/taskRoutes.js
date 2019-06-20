@@ -2,6 +2,7 @@
 
 module.exports = function (app) {
     let tasksCtrl = require('../controllers/taskController');
+    console.log('prueba');
 
     app.route('/tasks')
         .get(tasksCtrl.getTasks)
